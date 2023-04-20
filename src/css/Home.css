@@ -1,0 +1,147 @@
+/* Navbar  */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--navbar-bg-color);
+  background: transparent;
+  z-index: 10;
+}
+
+.navbar-ribbon {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+.logo small {
+  color: var(--navbar-logo-color);
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.navbar-item {
+  cursor: pointer;
+}
+
+.navbar-btn {
+  width: 100px;
+  padding: 10px;
+  background-color: var(--navbar-btn-bg-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Home section */
+.home {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background: var(--app-bg-color);
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.home-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.home-greet {
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+  color: var(--home-greet-color);
+}
+
+.home-name {
+  font-weight: bold;
+  font-size: 50px;
+  white-space: nowrap;
+}
+
+.home-role {
+  font-weight: bold;
+  font-size: 25px;
+  white-space: nowrap;
+  color: var(--home-role-color);
+}
+
+.home-rocket {
+  position: absolute;
+  bottom: -100px; /* change this value to set the desired distance from the bottom */
+
+  rotate: 180deg;
+  scale: 0.15;
+  animation: rocket 3s ease-in-out infinite;
+}
+@keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .home-rocket {
+    bottom: -160px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .home-rocket {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar-list {
+    display: none;
+  }
+}

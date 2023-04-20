@@ -1,0 +1,140 @@
+/* Experience section */
+.experience {
+  height: 220vh;
+  background: var(--app-bg-color);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 0px 50px;
+  position: relative;
+}
+
+.experience-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.h1h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 32%;
+  margin-bottom: 10%;
+}
+
+.experience-timeline {
+  position: relative;
+  width: 100%;
+}
+
+.experience-timeline::before {
+  content: "";
+  background: var(--experience-timeline-bg-color);
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.experience-card {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.experience-card:nth-child(even) .experience-content {
+  float: right;
+}
+
+.experience-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.experience-content {
+  position: relative;
+  width: 37%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background-color: var(--experience-card-bg-color);
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+
+.experience-circle {
+  width: 30px;
+  height: 30px;
+  background: var(--experience-circle-bg-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.experience-icon {
+  position: absolute;
+  left: 49.1%;
+  margin-top: 28px;
+  width: 22px;
+  z-index: 10;
+}
+
+.experience-content h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.experience-content ul {
+  list-style-type: disc;
+}
+
+.experience-content li {
+  text-align: justify;
+}
+.experience-content p {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    height: 330vh;
+  }
+
+  .experience-card:nth-child(even) .experience-content {
+    float: right;
+  }
+  .experience-timeline::before {
+    left: 30px;
+  }
+
+  .experience-circle {
+    left: 30px;
+  }
+
+  .experience-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+
+  .experience-card:nth-child(even) .timeline-content {
+    float: none;
+  }
+
+  .experience-icon {
+    left: 2.8%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience-icon {
+    left: 4%;
+  }
+}

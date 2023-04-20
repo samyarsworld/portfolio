@@ -1,55 +1,40 @@
 import React from "react";
+import { cardsData } from "./ExperienceInfo.js";
+
+const Card = ({ img, side, subTitle, title, bullets }) => (
+  <div className="experience-card">
+    <div className="experience-circle"></div>
+    <img src={img} className="experience-icon" alt="icon" />
+    <div className="experience-content">
+      <h2>{title}</h2>
+      <p>{subTitle}</p>
+      <ul>
+        {bullets.map((bullet, index) => (
+          <li key={index}>{bullet}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
 
 const Experience = () => {
   return (
     <div className="experience">
       <div className="experience-main">
-        <div class="experience-timeline">
-          <div class="experience-container experience-left">
-            <div class="experience-content">
-              <h2 className="experience-h2">Tecnologia</h2>
-              <p>
-                A tecnologia enologia e evolução, sempre trazendo novasnologia e
-                evolução, sempre trazendo novasnologia e evolução, sempre
-                trazendo novasnosswssss sssssssssssssssssssssslogia e evolução,
-                sempre trazendo novas evolução, sempre trazendo novas
-              </p>
-            </div>
-          </div>
+        <h1 className="h1h1">Professional Experience</h1>
 
-          <div class="experience-container experience-right">
-            <div class="experience-content">
-              <h2 className="experience-h2">Arte</h2>
-              <p>
-                A arte é uma exnologia e evolução, sempre trazendo novasnologia
-                e evolução, sempre trazendo novasnologia e evolução, sempre
-                trazendo novaspress
-              </p>
-            </div>
-          </div>
-
-          <div class="experience-container experience-left">
-            <div class="experience-content">
-              <h2 className="experience-h2">Matematica</h2>
-              <p>A matemática é uma dis</p>
-            </div>
-          </div>
-          <div class="experience-container experience-right">
-            <div class="experience-content">
-              <h2 className="experience-h2">Arte</h2>
-              <p>
-                A arte é uma exnologia e evolução, sempre trazendo novasnologia
-                e evolução, sempre trazendo novasnologia e evolução, sempre
-                trazendo novaspress
-              </p>
-            </div>
-          </div>
-
-          <div class="experience-container experience-left">
-            <div class="experience-content">
-              <h2 className="experience-h2">Matematica</h2>
-              <p>A matemática é uma dis</p>
-            </div>
+        <div className="experience-timeline">
+          <div className="experience-container">
+            {cardsData.map((card) => (
+              <Card
+                id={card.id}
+                img={card.img}
+                side={card.side}
+                subTitle={card.subTitle}
+                title={card.title}
+                bullets={card.bullets}
+              />
+            ))}
           </div>
         </div>
       </div>

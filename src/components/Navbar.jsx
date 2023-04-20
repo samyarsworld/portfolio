@@ -9,7 +9,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-ribbon">
-        <span className="navbar-logo">SAMYAR</span>
+        <span className="navbar-logo">
+          <a href="/" className="logo">
+            <img src="planet.svg" alt="Planet" />
+            <small>Samyarsworld</small>
+          </a>
+        </span>
 
         <ul className="navbar-list">
           <li className="navbar-item" onClick={() => scrollToSection("about")}>

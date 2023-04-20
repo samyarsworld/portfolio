@@ -1,0 +1,60 @@
+:root {
+  /* --app-bg-color: url("../public/bg.jpeg"); */
+  --app-bg-color: black;
+  --app-bg-color: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(100, 43, 115, 1) 0%,
+    rgba(4, 0, 4, 1) 90%
+  );
+
+  /* navbar */
+  --navbar-bg-color: #010910;
+  --navbar-btn-bg-color: rgb(201, 36, 168);
+  --navbar-logo-color: #c2a3e1;
+
+  /* home */
+  --home-role-color: #6e3aa3;
+  --home-greet-color: #6e3aa3;
+
+  /* about */
+  --about-btn-bg-color: rgb(201, 36, 168);
+
+  /* experience */
+  --experience-card-bg-color: rgba(101, 30, 163, 0.145);
+  --experience-timeline-bg-color: #6e75a1;
+  --experience-circle-bg-color: #fff;
+
+  /* projects */
+  --projects-color: white;
+  --projects-btn-bg-color: rgb(201, 36, 168);
+  --projects-left-card-bg-color: #624185;
+  --projects-left-card-hover-bg-color: #8769ac;
+  --projects-right-card-bg-color: #624185;
+  --projects-right-card-hover-bg-color: #8769ac;
+
+  /* skills */
+  --skills-card-bg-color: #6c2682;
+
+  /* contact */
+  --contact-btn-bg-color: rgb(201, 36, 168);
+}
+
+.app {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 0;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+.app::-webkit-scrollbar-track {
+  display: none;
+}
+
+.emo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}

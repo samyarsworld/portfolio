@@ -1,0 +1,88 @@
+/* Contact section */
+.contact {
+  height: 100vh;
+  background: var(--app-bg-color);
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.contact-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-left-form {
+  margin-top: 100px;
+
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+.contact-left-title {
+  font-weight: 200;
+}
+
+.contact-left-input {
+  padding: 20px;
+  background-color: #e8e6e6;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.contact-left-textarea {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e8e6e6;
+  color: black;
+}
+
+.contact-left-btn {
+  background-color: var(--contact-btn-bg-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 950px) {
+  .contact-left {
+    justify-content: center !important;
+  }
+
+  .contact-right {
+    display: none;
+  }
+  .contact-left-form {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-left-form {
+    width: 400px !important;
+  }
+}

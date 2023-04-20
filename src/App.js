@@ -1,5 +1,14 @@
 import React from "react";
-import "./App.css";
+import "./css/App.css";
+import "./css/Home.css";
+import "./css/About.css";
+import "./css/Experience.css";
+import "./css/Projects.css";
+import "./css/Skills.css";
+import "./css/Contact.css";
+import "./css/Solar.scss";
+import "./css/Ast.css";
+
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -13,8 +22,8 @@ function App() {
       <Home />
       <About />
       <Experience />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
     </div>
   );

@@ -1,9 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Solar from "./Solar";
 
 const Home = () => {
   return (
     <div className="home">
+      <Solar />
       <Navbar />
       <div className="home-main">
         <p className="home-greet">Hello! I am</p>

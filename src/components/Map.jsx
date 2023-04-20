@@ -6,6 +6,11 @@ import {
   Marker,
 } from "react-simple-maps";
 
+const fillColor = "#2f223f";
+const linesColor = "#fff";
+const markerColor = "#fff";
+const textColor = "#fff";
+
 const MapChart = () => {
   const markers = [
     {
@@ -48,6 +53,11 @@ const MapChart = () => {
       name: "Seattle",
       coordinates: [-122.3321, 47.6062],
     },
+    {
+      markerOffset: { x: 0, y: 18 },
+      name: "San Diego",
+      coordinates: [-117.1611, 32.7157],
+    },
   ];
   return (
     <ComposableMap
@@ -60,8 +70,8 @@ const MapChart = () => {
       style={{ width: "100%", height: "100%" }}>
       <Geographies
         geography="/features.json"
-        fill="#253854"
-        stroke="#C70039"
+        fill={fillColor}
+        stroke={linesColor}
         strokeWidth={0.5}>
         {({ geographies }) =>
           geographies.map((geo) => (
@@ -74,7 +84,7 @@ const MapChart = () => {
         <Marker key={name} coordinates={coordinates}>
           <g
             fill="none"
-            stroke="#C70039"
+            stroke={markerColor}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -86,7 +96,7 @@ const MapChart = () => {
             textAnchor="middle"
             dy={markerOffset.y}
             dx={markerOffset.x}
-            style={{ fontFamily: "system-ui", fill: "#C70039" }}>
+            style={{ fontFamily: "system-ui", fill: textColor }}>
             {name}
           </text>
         </Marker>
