@@ -1,6 +1,5 @@
 import React from "react";
 import { cardsData } from "./SkillsInfo.js";
-import Astr from "./Astr";
 
 const Card = ({ imgSrc, title, bullets }) => (
   <div className="skills-card">
@@ -18,8 +17,6 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="skills-main">
-        <Astr />
-        {/* <p className="astr-text">LET'S GO!!</p> */}
         <h1 className="h3h3">Skills</h1>
         <div className="skills-container">
           {cardsData.map((card) => (

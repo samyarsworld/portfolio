@@ -1,7 +1,7 @@
 .ast-container {
   position: absolute;
-  top: 0%;
-  left: 140%;
+  top: 80%;
+  left: 112%;
   transform: translate(-50%, -50%);
   z-index: -1;
   width: 500px;

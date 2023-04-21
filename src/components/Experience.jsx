@@ -1,5 +1,6 @@
 import React from "react";
 import { cardsData } from "./ExperienceInfo.js";
+import Astr from "./Astr";
 
 const Card = ({ img, side, subTitle, title, bullets }) => (
   <div className="experience-card">
@@ -21,6 +22,8 @@ const Experience = () => {
   return (
     <div className="experience">
       <div className="experience-main">
+        <Astr />
+
         <h1 className="h1h1">Professional Experience</h1>
 
         <div className="experience-timeline">
