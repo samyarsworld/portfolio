@@ -4,7 +4,7 @@ export const cardsData = [
     imgSrc: "react.svg",
     title: "React",
     bullets: [
-      "- Frontend design with React, css, scss, MaterialUI -",
+      "- Frontend design with React, Three.js, scss, MaterialUI -",
       "- Redux and store implementation for scalability -",
       "- Libraries: Axios, Socket.io, Openai, Bootstrap -",
     ],

@@ -1,7 +1,7 @@
 import React from "react";
 import { cardsData } from "./ProjectsInfo";
 
-const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets }) => (
+const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets, id }) => (
   <div className="projects-card">
     <div class="projects-user-card">
       <img src={imgSrc} alt="moon" />
@@ -9,7 +9,7 @@ const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets }) => (
     <div class="projects-content">
       <h2>{title}</h2>
       <p className="projects-subtitle">
-        <i className="fa fa-robot"></i>
+        <i className="fa fa-grav" style={{marginRight:'4px'}}></i>
         {subTitle}
       </p>
       <ul>
@@ -21,9 +21,10 @@ const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets }) => (
         <a href={live} target="_blank" rel="noreferrer">
           <button>Live</button>
         </a>
-        <a href={github} target="_blank" rel="noreferrer">
+        {id != 4 && (<a href={github} target="_blank" rel="noreferrer">
           <button style={{ marginLeft: "15px" }}>Github</button>
-        </a>
+        </a>) }
+        
         <span style={{ float: "right" }}>{moreInfo}</span>
       </p>
     </div>
@@ -46,6 +47,7 @@ const Projects = () => {
             github={card.github}
             moreInfo={card.moreInfo}
             bullets={card.bullets}
+            id={card.id}
           />
         ))}
       </div>
