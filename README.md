@@ -1,4 +1,4 @@
-###This portfolio website is designed to showcase my skills and experiences as a computer programmer engineer. It includes several sections that provide an overview of my background, projects, skills, and how to contact me.
+### This portfolio website is designed to showcase my skills and experiences as a computer programmer engineer. It includes several sections that provide an overview of my background, projects, skills, and how to contact me.
 
 # About
 
