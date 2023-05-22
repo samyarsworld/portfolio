@@ -21,7 +21,7 @@ const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets, id }) 
         <a href={live} target="_blank" rel="noreferrer">
           <button>Live</button>
         </a>
-        {id != 4 && (<a href={github} target="_blank" rel="noreferrer">
+        {id !== 4 && (<a href={github} target="_blank" rel="noreferrer">
           <button style={{ marginLeft: "15px" }}>Github</button>
         </a>) }
         
