@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const About = () => {
   const scrollToSection = (name) => {
