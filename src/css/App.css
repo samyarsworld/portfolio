@@ -5,6 +5,8 @@
     rgba(100, 43, 115, 1) 0%,
     rgba(4, 0, 4, 1) 90%
   );
+  --text-color: rgba(255, 255, 255, 0.8);
+
 
   /* navbar */
   --navbar-bg-color: #010910;
@@ -24,7 +26,6 @@
   --experience-circle-bg-color: #fff;
 
   /* projects */
-  --projects-color: white;
   --projects-btn-bg-color: rgb(201, 36, 168);
   --projects-left-card-bg-color: #050109;
   --projects-left-card-hover-bg-color: #8769ac;

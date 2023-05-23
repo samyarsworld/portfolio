@@ -20,18 +20,14 @@
   display: flex;
 }
 
-.projects-card:hover {
+/* .projects-card:hover {
   background: var(--projects-right-card-hover-bg-color);
-}
+} */
 
 .projects-user-card {
   width: 256px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-}
-
-.projects-user-card:hover {
-  background: var(--projects-left-card-hover-bg-color);
 }
 
 .projects-user-card img {
@@ -67,7 +63,7 @@
 .projects-content p,
 .projects-content button,
 .projects-content span {
-  color: var(--projects-color);
+  color: var(--text-color);
 }
 
 .projects-content ul {

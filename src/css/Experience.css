@@ -77,18 +77,22 @@
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 2px;
+  color: var(--text-color);
 }
 
 .experience-content ul {
   list-style-type: disc;
+  
 }
 
 .experience-content li {
   text-align: justify;
+  color: var(--text-color);
 }
 .experience-content p {
   margin-bottom: 10px;
   font-weight: 300;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
