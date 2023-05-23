@@ -17,27 +17,27 @@ const Navbar = () => {
         </span>
 
         <ul className="navbar-list">
-          <li className="navbar-item" onClick={() => scrollToSection("about")}>
-            Home
+          <li className="navbar-item" onClick={() => scrollToSection("about-main")}>
+            About
           </li>
           <li
             className="navbar-item"
-            onClick={() => scrollToSection("experience")}>
+            onClick={() => scrollToSection("experience-main")}>
             Experience
           </li>
-          <li className="navbar-item" onClick={() => scrollToSection("skills")}>
-            Skills
-          </li>
           <li
             className="navbar-item"
-            onClick={() => scrollToSection("projects")}>
+            onClick={() => scrollToSection("projects-main")}>
             Projects
+          </li>
+          <li className="navbar-item" onClick={() => scrollToSection("skills-main")}>
+            Skills
           </li>
         </ul>
 
         <button
           className="navbar-btn"
-          onClick={() => scrollToSection("contact")}>
+          onClick={() => scrollToSection("contact-main")}>
           Contact me
         </button>
       </div>

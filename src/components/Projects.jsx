@@ -25,7 +25,7 @@ const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets, id }) 
           <button style={{ marginLeft: "15px" }}>Github</button>
         </a>) }
         
-        <span style={{ float: "right" }}>{moreInfo}</span>
+        <span class="projects-moreinfo" >{moreInfo}</span>
       </p>
     </div>
   </div>
@@ -33,24 +33,22 @@ const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets, id }) 
 
 const Projects = () => {
   return (
-    <div className="projects">
-      <div className="projects-main">
-        <h1 className="h2h2">Research and Projects</h1>
+    <div className="projects-main">
+      <h1 className="projects-title">Research and Projects</h1>
 
-        {cardsData.map((card) => (
-          <Card
-            key={card.id}
-            imgSrc={card.imgSrc}
-            title={card.title}
-            subTitle={card.subTitle}
-            live={card.live}
-            github={card.github}
-            moreInfo={card.moreInfo}
-            bullets={card.bullets}
-            id={card.id}
-          />
-        ))}
-      </div>
+      {cardsData.map((card) => (
+        <Card
+          key={card.id}
+          imgSrc={card.imgSrc}
+          title={card.title}
+          subTitle={card.subTitle}
+          live={card.live}
+          github={card.github}
+          moreInfo={card.moreInfo}
+          bullets={card.bullets}
+          id={card.id}
+        />
+      ))}
     </div>
   );
 };

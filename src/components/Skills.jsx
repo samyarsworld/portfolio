@@ -15,19 +15,17 @@ const Card = ({ imgSrc, title, bullets }) => (
 
 const Skills = () => {
   return (
-    <div className="skills">
-      <div className="skills-main">
-        <h1 className="h3h3">Skills</h1>
-        <div className="skills-container">
-          {cardsData.map((card) => (
-            <Card
-              key={card.id}
-              imgSrc={card.imgSrc}
-              title={card.title}
-              bullets={card.bullets}
-            />
-          ))}
-        </div>
+    <div className="skills-main">
+      <h1 className="skills-title">Skills</h1>
+      <div className="skills-container">
+        {cardsData.map((card) => (
+          <Card
+            key={card.id}
+            imgSrc={card.imgSrc}
+            title={card.title}
+            bullets={card.bullets}
+          />
+        ))}
       </div>
     </div>
   );

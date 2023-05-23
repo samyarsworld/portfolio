@@ -4,8 +4,7 @@ import Astr from "./Astr";
 
 const Card = ({ img, side, subTitle, title, bullets }) => (
   <div className="experience-card">
-    <div className="experience-circle"></div>
-    <img src={img} className="experience-icon" alt="icon" />
+    <div className="experience-circle"><img src={img} className="experience-icon" alt="icon" /></div>
     <div className="experience-content">
       <h2>{title}</h2>
       <p>{subTitle}</p>
@@ -20,25 +19,23 @@ const Card = ({ img, side, subTitle, title, bullets }) => (
 
 const Experience = () => {
   return (
-    <div className="experience">
-      <div className="experience-main">
-        <Astr />
+    <div className="experience-main">
+      <Astr />
 
-        <h1 className="h1h1">Professional Experience</h1>
+      <h1 className="experience-title">Experience</h1>
 
-        <div className="experience-timeline">
-          <div className="experience-container">
-            {cardsData.map((card) => (
-              <Card
-                id={card.id}
-                img={card.img}
-                side={card.side}
-                subTitle={card.subTitle}
-                title={card.title}
-                bullets={card.bullets}
-              />
-            ))}
-          </div>
+      <div className="experience-timeline">
+        <div className="experience-container">
+          {cardsData.map((card) => (
+            <Card
+              id={card.id}
+              img={card.img}
+              side={card.side}
+              subTitle={card.subTitle}
+              title={card.title}
+              bullets={card.bullets}
+            />
+          ))}
         </div>
       </div>
     </div>
