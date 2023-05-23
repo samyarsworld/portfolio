@@ -33,36 +33,34 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
-      <div className="contact-main">
-        <div className="contact-left">
-          <form className="contact-left-form" ref={ref} onSubmit={handleSubmit}>
-            <h1 className="contact-left-title">Contact Samyar</h1>
-            <input
-              name="name"
-              type="text"
-              className="contact-left-input"
-              placeholder="Name"></input>
-            <input
-              name="email"
-              type="email"
-              className="contact-left-input"
-              placeholder="Email"></input>
+    <div className="contact-main">
+      <div className="contact-left">
+        <form className="contact-left-form" ref={ref} onSubmit={handleSubmit}>
+          <h1 className="contact-left-title">Contact Samyar</h1>
+          <input
+            name="name"
+            type="text"
+            className="contact-left-input"
+            placeholder="Name"></input>
+          <input
+            name="email"
+            type="email"
+            className="contact-left-input"
+            placeholder="Email"></input>
 
-            <textarea
-              className="contact-left-textarea"
-              placeholder="Write.."
-              name="message"
-              cols="30"
-              rows="10"></textarea>
-            <button type="submit" className="contact-left-btn">
-              Submit
-            </button>
-          </form>
-        </div>
-        <div className="contact-right">
-          <MapChart className="contact-right-map" />
-        </div>
+          <textarea
+            className="contact-left-textarea"
+            placeholder="Write.."
+            name="message"
+            cols="30"
+            rows="10"></textarea>
+          <button type="submit" className="contact-left-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div className="contact-right">
+        <MapChart className="contact-right-map" />
       </div>
     </div>
   );
