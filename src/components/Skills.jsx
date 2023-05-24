@@ -3,7 +3,7 @@ import { cardsData } from "./SkillsInfo.js";
 
 const Card = ({ imgSrc, title, bullets }) => (
   <div className="skills-card">
-    <img src={imgSrc} alt="img" />
+    <img src={imgSrc} alt={title} className="skills-img" />
     <h3>{title}</h3>
     <ul>
       {bullets.map((bullet, index) => (

@@ -24,7 +24,7 @@ export const cardsData = [
     imgSrc: "django.svg",
     title: "Django and Flask",
     bullets: [
-      "- Design backend services using Flask and Django -",
+      "- Design backend services in Flask and Django -",
       "- API design and web security implementation - ",
       "- Database design using Django models in SQL -",
     ],
@@ -46,7 +46,7 @@ export const cardsData = [
     title: "Databases",
     bullets: [
       "- Relational db design in SQL, Sqlite3, AWS RDS -",
-      "- NoSQL db design in postgress, AWS DynamoDB -",
+      "- NoSQL design in postgres and AWS DynamoDB -",
       "- AWS S3, MongoAtlas, Cloudinary as cloud store -",
     ],
   },
@@ -55,10 +55,10 @@ export const cardsData = [
     imgSrc: "pythonc.svg",
     title: "Data Analysis and Algorithms",
     bullets: [
-      "- Post-processing code setup for big data analysis -",
+      "- Build and deploy secure backend APIs  -",
       "- Python Numpy, Matplotlib, Pandas libraries -",
-      "- Efficient gaming algorithms using Pygame -",
-      "- Highly skilled in alogorithms and data structures -",
+      "- Write efficient gaming algorithms in Pygame -",
+      "- Skilled in alogorithms and data structures -",
     ],
   },
 ];

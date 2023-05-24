@@ -20,9 +20,6 @@
   display: flex;
 }
 
-/* .projects-card:hover {
-  background: var(--projects-right-card-hover-bg-color);
-} */
 
 .projects-user-card {
   width: 256px;
@@ -127,6 +124,7 @@
   }
   .projects-moreinfo {
     font-size: 14px;
+    float: right !important;
   }
 
 }

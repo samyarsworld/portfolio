@@ -34,7 +34,7 @@ const Card = ({ imgSrc, title, subTitle, live, github, moreInfo, bullets, id }) 
 const Projects = () => {
   return (
     <div className="projects-main">
-      <h1 className="projects-title">Research and Projects</h1>
+      <h1 className="projects-title">Projects</h1>
 
       {cardsData.map((card) => (
         <Card
