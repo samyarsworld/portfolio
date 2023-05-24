@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar-ribbon">
         <a href="/" className="navbar-logo">
           <img src="planet.svg" alt="Planet" />
-          <small>Samyarsworld</small>
+          <small style={{marginLeft:"-15px"}}>Samyarsworld</small>
         </a>
 
         <ul className="navbar-list">

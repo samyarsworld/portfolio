@@ -23,13 +23,13 @@
   border-radius: 5px;
   padding: 10px;
   text-align: center;
-  width: 330px;
+  width: 360px;
   height: 270px;
   background-color: var(--skills-card-bg-color);
 }
 
 .skills-img {
-  width: 300px;
+  width: 320px;
   height: 130px;
   object-fit: cover;
   border-radius: 5px;
@@ -42,7 +42,7 @@
 }
 
 .skills-card ul {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .skills-card li {
@@ -58,8 +58,27 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .skills-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .skills-card {
+    width: 330px;
+  }
+  .skills-card ul {
+    font-size: 14px;
+  }
+
+  .skills-img {
+    width: 200px;
+    height: 130px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .skills-img {
+    width: 200px;
+    height: 130px;
   }
 }
