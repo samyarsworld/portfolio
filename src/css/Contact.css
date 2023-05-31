@@ -22,7 +22,7 @@
 
 .contact-left-form {
   margin-top: 150px;
-  width: 500px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -64,8 +64,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  
   .contact-left-form {
-    width: 250px !important;
+    width: 300px;
   }
 }
 
@@ -79,11 +80,9 @@
   }
 
   .contact-left-form {
-    width: 300px;
     margin-left: 0;
     margin-bottom: 50px;
   }
- 
   .contact-left-btn {
   margin-left: auto;
   margin-right: auto;
