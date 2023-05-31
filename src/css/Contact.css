@@ -17,11 +17,12 @@
 
 .contact-right {
   flex: 1;
+  margin-top: 20px;
 }
 
 .contact-left-form {
   margin-top: 150px;
-  width: 400px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
