@@ -42,7 +42,7 @@ const About = () => {
       </p>
       <button
         className="about-main-btn"
-        onClick={() => scrollToSection("contact")}>
+        onClick={() => scrollToSection("contact-main")}>
         Learn more
       </button>
     </div>
