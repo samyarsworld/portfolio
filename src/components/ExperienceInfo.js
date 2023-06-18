@@ -7,7 +7,7 @@ export const cardsData = [
     img: "uni.svg",
     bullets: [
       "Lead mechanical designer of the +1 billion dollar Atlantic Science Enterprise Centre (ASEC) project. Design from computational simulations (CFD) and system design to budget and data analysis. Consistently, reduced design costs upto 20 million dollars on various projects.",
-      "Excel micro programming to automate mechanical calculations led to saving thousands of hours for future designers.",
+      "Excel microprogramming to automate mechanical calculations led to saving thousands of hours for future designers.",
       "Mechanical calculations for various commercial projects, namely Royal Colombian Hospital, Rogers Centre, and ASEC.",
     ],
   },
@@ -39,12 +39,12 @@ export const cardsData = [
     id: 4,
     subTitle: "University of Ottawa - Polytechnique Montréal",
     side: "right",
-    title: "MASc & BASc - Mechanical Engineering",
+    title: "MASc & BASc - Mechanical/Aerospace Engineering",
     img: "work.svg",
     bullets: [
       "Data analysis and programming in Aerospace applications.",
       "Honored with full-study excellence scholarship.",
-      "Teacher Assistantship for Biofluid mechanics, Programming with Python, and Combustion.",
+      "Teacher Assistantship for Biofluid Mechanics, Programming with Python, and Combustion.",
     ],
   },
   {
