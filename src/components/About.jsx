@@ -32,11 +32,11 @@ const About = () => {
         </a>
       </h2>
       <p className="about-main-desc">
-        Samyar is a professional back-end developer who is driven by a true
+        Samyar is a backend/system developer who is driven by a true
         passion for implementing efficient algorithms to solve complex
         global and in the near future, interstellar challenges. Having
         obtained his Master's degree, he has gained extensive experience
-        working on diverse frontend, backend, and programming projects. He
+        working on diverse data science, API setup, and programming projects. He
         is a lifelong learner, constantly striving to broaden his knowledge
         and remain abreast of cutting-edge technologies.
       </p>
