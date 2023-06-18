@@ -4,7 +4,7 @@ export const cardsData = [
     imgSrc: "react.svg",
     title: "React",
     bullets: [
-      "- Frontend design with React, Three.js, and scss -",
+      "- Frontend design with React, Three.js, and SCSS -",
       "- Redux and store implementation for scalability -",
       "- Libraries: Axios, Socket.io, Openai, Bootstrap -",
     ],
@@ -16,7 +16,7 @@ export const cardsData = [
     bullets: [
       "- Backend and server design in node javascript -",
       "- Secure web apps with JWT, cookies, storages -",
-      "- Libraries: Express.js, Socket.io, bcrypt, cors -",
+      "- Libraries: Express.js, Socket.io, Bcrypt, cors -",
     ],
   },
   {
@@ -46,7 +46,7 @@ export const cardsData = [
     title: "Databases",
     bullets: [
       "- Relational db design in SQL, Sqlite3, AWS RDS -",
-      "- NoSQL design in postgres and AWS DynamoDB -",
+      "- NoSQL design in Postgres and AWS DynamoDB -",
       "- AWS S3, MongoAtlas, Cloudinary as cloud store -",
     ],
   },
@@ -58,7 +58,7 @@ export const cardsData = [
       "- Build and deploy secure backend APIs  -",
       "- Python Numpy, Matplotlib, Pandas libraries -",
       "- Write efficient gaming algorithms in Pygame -",
-      "- Skilled in alogorithms and data structures -",
+      "- Skilled in algorithms and data structures -",
     ],
   },
 ];
